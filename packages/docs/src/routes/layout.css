@@ -1,1 +1,82 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.light *));
+
+@theme inline {
+	/* Visual rhythm aliases */
+	--radius-card: var(--radius);
+
+	/* Theme token aliases */
+	--color-background: hsl(var(--background));
+	--color-foreground: hsl(var(--foreground));
+	--color-muted: hsl(var(--muted));
+	--color-muted-foreground: hsl(var(--muted-foreground));
+	--color-border: hsl(var(--border));
+	--color-input: hsl(var(--input));
+	--color-primary: hsl(var(--primary));
+	--color-primary-foreground: hsl(var(--primary-foreground));
+	--color-secondary: hsl(var(--secondary));
+	--color-secondary-foreground: hsl(var(--secondary-foreground));
+	--color-accent: hsl(var(--accent));
+	--color-accent-foreground: hsl(var(--accent-foreground));
+	--color-success: hsl(var(--success));
+	--color-success-foreground: hsl(var(--success-foreground));
+	--color-ring: hsl(var(--ring));
+	--color-sidebar: hsl(var(--sidebar));
+	--color-sidebar-foreground: hsl(var(--sidebar-foreground));
+	--color-sidebar-border: hsl(var(--sidebar-border));
+	--color-sidebar-accent: hsl(var(--sidebar-accent));
+}
+
+.light {
+	/* Visual rhythm */
+	--radius: 0.75rem;
+
+	/* Theme tokens */
+	--background: 42 43% 96%;
+	--foreground: 220 18% 14%;
+	--muted: 40 24% 92%;
+	--muted-foreground: 220 9% 42%;
+	--border: 214 18% 80%;
+	--input: 214 18% 80%;
+	--primary: 221 27% 16%;
+	--primary-foreground: 40 50% 98%;
+	--secondary: 150 42% 88%;
+	--secondary-foreground: 155 52% 20%;
+	--accent: 147 48% 87%;
+	--accent-foreground: 159 47% 19%;
+	--success: 149 49% 87%;
+	--success-foreground: 159 53% 18%;
+	--ring: 156 49% 36%;
+	--sidebar: 42 58% 93%;
+	--sidebar-foreground: 220 18% 14%;
+	--sidebar-border: 213 18% 78%;
+	--sidebar-accent: 148 47% 87%;
+}
+
+.dark {
+	/* Visual rhythm */
+	--radius: 0.75rem;
+
+	/* Theme tokens */
+	--background: 220 18% 9%;
+	--foreground: 40 35% 95%;
+	--muted: 218 13% 18%;
+	--muted-foreground: 215 10% 71%;
+	--border: 217 12% 24%;
+	--input: 217 12% 24%;
+	--primary: 149 44% 73%;
+	--primary-foreground: 155 61% 15%;
+	--secondary: 158 31% 22%;
+	--secondary-foreground: 147 47% 88%;
+	--accent: 157 31% 24%;
+	--accent-foreground: 145 47% 90%;
+	--success: 158 32% 22%;
+	--success-foreground: 146 48% 89%;
+	--ring: 149 45% 68%;
+	--sidebar: 220 18% 12%;
+	--sidebar-foreground: 40 35% 95%;
+	--sidebar-border: 217 12% 24%;
+	--sidebar-accent: 157 31% 24%;
+}
