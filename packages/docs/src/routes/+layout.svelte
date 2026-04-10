@@ -37,6 +37,6 @@
 	</script>
 </svelte:head>
 
-<div class="h-dvh w-dvw bg-background">
+<div class="h-dvh w-dvw bg-background text-foreground">
 	{@render children()}
 </div>

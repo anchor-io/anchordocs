@@ -25,6 +25,24 @@ export default defineConfig({
 						backToTopLabel: 'Back to top'
 					}
 				}
+			},
+			es: {
+				label: 'Español',
+				lang: 'es',
+				dir: 'ltr',
+				ui: {
+					search: {
+						buttonLabel: 'Buscar',
+						shortcutLabel: 'Ctrl + K',
+						placeholder: 'Buscar la documentacion...',
+						emptyLabel: 'No se encontraron resultados'
+					},
+					toc: {
+						title: 'En esta pagina',
+						emptyLabel: 'No se encontraron secciones',
+						backToTopLabel: 'Volver arriba'
+					}
+				}
 			}
 		}
 	}
